@@ -18,8 +18,9 @@ public class Main {
         System.out.println(c);
 
         SearchPrime searchPrime = (SearchPrime) ctx.getBean("searchPrime");
-        List<Integer> testList = searchPrime.getFirstPrimes(1000000);
+        List<Integer> testList = searchPrime.getFirstPrimes(1000);
         System.out.println(Arrays.toString(testList.toArray()));
+        System.out.println("Total primes: " +testList.size());
 
 
 
